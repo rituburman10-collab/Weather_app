@@ -1,6 +1,6 @@
 # CloudCast ⛅
 
-A premium, responsive web-based weather dashboard application that provides real-time atmospheric updates using live API integration. The interface features a clean glassmorphism card design optimized for seamless user focus.
+A responsive web-based weather dashboard application that provides real-time atmospheric updates using live API integration. The interface features a clean glassmorphism card design optimized for seamless user focus.
 
 ## Features
 
@@ -17,3 +17,6 @@ A premium, responsive web-based weather dashboard application that provides real
 - **CSS3:** Advanced fluid typography, custom linear gradients, and glassmorphism interface panels.
 - **JavaScript (ES6):** Asynchronous fetch requests with client-side fallback security loops and dynamic DOM handling.
 - **OpenWeatherMap API:** Primary data pipeline synchronization handler.
+
+## Author
+   Ritu
