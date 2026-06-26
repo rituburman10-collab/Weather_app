@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-dashboard">
+        <div class="dashboard-header">
+            <h1>CloudCast ⛅</h1>
+            <p class="branding-tagline">Providing real-time weather companion updates </p>
+        </div>
+
+        <div class="search-module">
+            <input type="text" id="city-input" placeholder="Enter specific city name..." autocomplete="off">
+            <button id="search-btn">Fetch Weather</button>
+        </div>
+
+        <div id="weather-info" class="weather-dashboard-view hidden">
+            <h2 id="city-name" class="centered-text">City, Country</h2>
+            <p id="weather-desc" class="centered-text">Climate Status</p>
+            
+            <div class="metric-container centered-text">
+                <span id="temperature">--</span><span id="unit-display">°C</span>
+            </div>
+
+            <button id="toggle-unit-btn" class="toggle-control-btn centered-text">Switch to °F</button>
+
+            <div class="grid-details">
+                <div class="detail-cell">
+                    <p class="cell-label">💧 Humidity Percentage</p>
+                    <p id="humidity" class="cell-value">--%</p>
+                </div>
+                <div class="detail-cell">
+                    <p class="cell-label">💨 Wind Speed Data</p>
+                    <p id="wind-speed" class="cell-value">-- m/s</p>
+                </div>
+            </div>
+        </div>
+
+        <p id="error-msg" class="custom-error hidden">City not found. Please verify the standard spelling.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

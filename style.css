@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.weather-dashboard {
+    /* Transparent Frosted Glass Card Layout with subtle backdrop filter */
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    color: #2c3e50;
+}
+
+/* Header & Tagline Styling for app branding */
+.dashboard-header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.dashboard-header h1 {
+    font-size: 28px;
+    color: #1e3a5f;
+    font-weight: 700;
+}
+
+.dashboard-header .branding-tagline {
+    font-size: 13px;
+    color: #7f8c8d;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+/* Professional input field and button alignment */
+.search-module {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#city-input {
+    flex: 1;
+    padding: 12px 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#city-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+}
+
+#search-btn {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s, background 0.3s;
+}
+
+#search-btn:hover {
+    transform: translateY(-1px);
+    background: linear-gradient(135deg, #2980b9, #236fa1);
+}
+
+/* Weather details view alignment and animation */
+.weather-dashboard-view {
+    animation: fadeIn 0.4s ease-out;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+#city-name {
+    font-size: 26px;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+#weather-desc {
+    text-transform: capitalize;
+    color: #7f8c8d;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Primary numerical temperature render details */
+.metric-container {
+    font-size: 56px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Control button styling for usability and balance */
+.toggle-control-btn {
+    display: block;
+    margin: 0 auto 25px auto;
+    background: transparent;
+    border: 1px solid rgba(52, 152, 219, 0.3);
+    color: #3498db;
+    padding: 6px 14px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.toggle-control-btn:hover {
+    background: rgba(52, 152, 219, 0.1);
+}
+
+/* Balanced details grid for humidity percentage and wind speed */
+.grid-details {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(248, 250, 252, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.detail-cell {
+    text-align: center;
+    flex: 1;
+}
+
+.detail-cell .cell-label {
+    font-size: 13px;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+}
+
+.detail-cell .cell-value {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Customized error block alignment and styling */
+.custom-error {
+    color: #e74c3c;
+    font-weight: 500;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Keyframe fadeIn execution for smooth render transitions */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
